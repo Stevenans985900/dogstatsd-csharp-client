@@ -1,9 +1,23 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
+using System.Diagnostics.CodeAnalysis;
 
 [assembly: InternalsVisibleTo("StatsdClient.Tests, PublicKey=00240000048000009400000006020000002400005253413100040000010001009558fd81ea0e330858198ae6c860c0c9fd2d9df3e5f2069434649e4ec61c9ceb9744d2a3fd82518d90abb5cbcefb6292e9d227d5854bd07dbd8884d129350c95c7742d499dfc4961223b35326e203c5924e413a2385a7aa7c704432e9101bb946da201977df2b992c25d0fb77645c1ac5bc29cde7bc8e5d054b78bd9c6727497")]
 [assembly: InternalsVisibleTo("DynamicProxyGenAssembly2,PublicKey=0024000004800000940000000602000000240000525341310004000001000100c547cac37abd99c8db225ef2f6c8a3602f3b3606cc9891605d02baa56104f4cfc0734aa39b93bf7852f7d9266654753cc297e7d2edfe0bac1cdcf9f717241550e0a7b191195b7667bb4f64bcb8e2121380fd1d9d46ad2d92d2d15605093924cceaf74c4861eff62abf69b9291ed0a340e113be11e6a7d3113e92484cf7045cc7")]
 
+[assembly: SuppressMessage("StyleCop.CSharp.NamingRules", "SA1309:FieldNamesMustNotBeginWithUnderscore", Justification = "Reviewed.")]
+[assembly: SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1633:File must have header", Justification = "Reviewed.")]
+[assembly: SuppressMessage("StyleCop.CSharp.ReadabilityRules", "SA1101:Prefix local calls with this", Justification = "Reviewed.")]
+[assembly: SuppressMessage("StyleCop.CSharp.OrderingRules", "SA1200:UsingDirectivesMustBePlacedWithinNamespace", Justification = "Reviewed.")]
+[assembly: SuppressMessage("StyleCop.CSharp.LayoutRules", "SA1512:Single-line comments must not be followed by blank line", Justification = "Reviewed.")]
+[assembly: SuppressMessage("StyleCop.CSharp.LayoutRules", "SA1515:Single-line comment must be preceded by blank line", Justification = "Reviewed.")]
+[assembly: SuppressMessage("StyleCop.CSharp.LayoutRules", "SA1501:Statement must not be on a single line", Justification = "Reviewed.")]
+[assembly: SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1119:StatementMustNotUseUnnecessaryParenthesis", Justification = "Reviewed.")]
+
+
+// Rule to apply
+
+//    SA1024: Colon should be preceded by a space
 namespace StatsdClient
 {
     public enum Status
